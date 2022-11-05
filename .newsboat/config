@@ -1,0 +1,53 @@
+external-url-viewer "urlscan -dc -r 'linkhandler {$1}'"
+
+download-retries 2
+download-timeout 20
+use-proxy no
+proxy-type socks5h
+proxy 127.0.0.1:9050
+user-agent "Mozilla/5.0 (Windows NT 6.1; rv:60.0) Gecko/20100101 Firefox/60.0" 
+history-limit 0
+reload-threads 4
+auto-reload yes
+suppress-first-reload yes
+reload-time 20
+notify-beep no
+confirm-exit yes
+save-path "~/Documents/rss/"
+browser "/usr/bin/brave-browser %u"
+
+
+bind-key U show-urls
+bind-key s save
+
+feedlist-format "%?T?║%4i %n %8u (%T) %t &╠═══════ - %t?
+
+macro , open-in-browser
+
+# macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser linkhandler
+macro m set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler
+macro v set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler
+macro l set browser "/usr/local/bin/lynx" ; open-in-browser ; set browser linkhandler
+macro f set browser "/usr/loacl/bin/feh" ; open-in-browser ; set browser linkhandler
+
+color listnormal cyan default
+color listfocus default default standout bold
+color listnormal_unread green default
+color listfocus_unread green default bold
+color info default black bold
+color article white default bold
+
+highlight all "---.*---" white
+highlight feedlist ".*(0/0))" white 
+highlight article "(^Feed:.*|^Title:.*|^Author:.*)" white default bold
+highlight article "(^Link:.*|^Date:.*)" default default
+highlight article "https?://[^ ]+" green default
+highlight article "^(Title):.*$" yellow default
+highlight article "\\[[0-9][0-9]*\\]" cyan default bold
+highlight article "\\[image/\\ [0-9]+\\]" white default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" white default bold
+highlight article ":.*\\(link\\)$" green default
+highlight article ":.*\\(image\\)$" yellow default
+highlight article ":.*\\(embedded flash\\)$" magenta default
+
+

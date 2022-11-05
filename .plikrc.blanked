@@ -1,0 +1,29 @@
+Debug = false
+Quiet = false
+URL = "https://"
+OneShot = false
+Removable = false
+Stream = false
+Secure = false
+SecureMethod = "openssl"
+Archive = false
+ArchiveMethod = "tar"
+DownloadBinary = "curl"
+Comments = ""
+Login = ""
+Password = ""
+TTL = 43200
+AutoUpdate = true
+Token = ""
+DisableStdin = false
+Insecure = false
+
+[SecureOptions]
+  Cipher = "aes-256-cbc"
+  Openssl = "/usr/bin/openssl"
+  Options = "-md sha256"
+
+[ArchiveOptions]
+  Compress = "gzip"
+  Options = ""
+  Tar = "/bin/tar"

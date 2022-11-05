@@ -1,0 +1,25 @@
+set from = ""
+set sendmail = "/usr/bin/msmtp -a privat"
+
+# Set folders
+set spoolfile = "+privat/INBOX"
+set postponed = "+privat/drafts"
+set record = "+privat/Sent"
+set trash = "+privat/trash"
+
+# custom signaure
+# set signature = ~/.mutt/signatures/tinfoil
+
+color status cyan default
+
+# macro index o "<shell-escape>offlineimap -a privat<enter>" "run offlineimap to sync mail for this account"
+
+macro index,pager J \
+  "<enter-command>set my_old_resolve=\$resolve noresolve<enter>\
+  <tag-prefix><clear-flag>n<enter-command>set resolve=\$my_old_resolve<enter>\
+  <save-message>+privat/junk<enter>" \
+  "mark as read and move to junk folder"
+
+macro index,pager I \
+  "<save-message>+privat/INBOX<enter>"  \
+  "move message to the inbox"

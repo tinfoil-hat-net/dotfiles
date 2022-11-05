@@ -1,0 +1,66 @@
+[general]
+# List of accounts to be synced, separated by a comma.
+accounts = ,,
+fsync = false
+ui = ttyui
+type = Maildir
+maxsyncaccounts = 1
+singlethreadperfolder = false
+holdconnectionopen = yes
+ssl_version = StartTLS
+usecompression = yes
+keepalive = 60
+postsynchook = mu index -m ~/Mail
+
+
+[Account privat]
+
+localrepository = privat-local
+remoterepository = privat-remote
+
+[Repository privat-local]
+type = Maildir
+localfolders = ~/Mail/privat
+
+[Repository privat-remote]
+type = IMAP
+repoteport = 993
+remotehost = imap. 
+remoteuser = @.net
+remotepass = 
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+[Account 1]
+localrepository = horsefucker-local
+remoterepository = horsefucker-remote
+
+[Repository 1-local]
+type = Maildir
+localfolders = ~/Mail/1
+
+[Repository 1-remote]
+type = IMAP
+repoteport = 993
+remotehost = .li
+remoteuser = @.org
+remotepass = 
+
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+
+[Account 2]
+localrepository = 2-local
+remoterepository = 2-remote
+
+[Repository 2-local]
+type = Maildir
+localfolders = ~/Mail/2
+
+[Repository 2-remote]
+type = IMAP
+repoteport = 993
+remotehost = .li
+remoteuser = .li
+remotepass = 
+
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
