@@ -331,6 +331,9 @@ globalkeys = gears.table.join(
 -- CUSTOM
     awful.key({ modkey },            "l",     function () awful.util.spawn("i3lock-fancy -f JetBrainsMono-Regular") end,
           {description = "lockscreen", group = "lockscreen"}),
+    awful.key({ modkey },            "o",     function () awful.spawn.with_shell("xdotool type $(grep -v '^#' ~/.bookmarks | dmenu -i -l 50 | cut -d' ' -f1)") end,
+          {description = "lockscreen", group = "lockscreen"}),
+
 
     -- Prompt
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,

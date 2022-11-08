@@ -4,6 +4,7 @@ nm-applet &
 picom &
 xrdb -load ~/.Xresources &
 feh --bg-scale ~/Bilder/wall.jpg &
-nitrogen --restore &
+# nitrogen --restore &
+autorandr dock &
 
 exec /usr/bin/awesome
