@@ -1,6 +1,6 @@
 Debug = false
 Quiet = false
-URL = "https://"
+URL = ""
 OneShot = false
 Removable = false
 Stream = false

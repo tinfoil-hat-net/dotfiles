@@ -231,3 +231,4 @@ export EDITOR=vim
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 alias tb="nc bin.tinfoil-hat.net 9999"
+
