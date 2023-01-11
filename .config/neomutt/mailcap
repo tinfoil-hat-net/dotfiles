@@ -1,0 +1,11 @@
+image/*; /usr/local/bin/xdg-open %s
+
+application/msword; /usr/local/bin/xdg-open %s
+application/pdf; /usr/local/bin/xdg-open %s
+application/postscript ; /usr/local/bin/xdg-open %s
+
+#  text/html; qutebrowser %s && sleep 5 ; test=test -n "$DISPLAY";
+nametemplate=%s.html; needsterminal
+# text/html; lynx -dump %s ; copiousoutput; nametemplate=%s.html
+text/html; w3m -I %{charset} -T text/html ; copiousoutput; nametemplate=%s.html
+

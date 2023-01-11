@@ -60,7 +60,7 @@ URxvt.depth: 32
 URxvt*background: rgba:0000/0000/0000/cccc
 
 
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 URxvt.lineSpace: -2
 URxvt.geometry: 80x26
 URxvt.internalBorder:10

@@ -1,0 +1,51 @@
+account privat
+host .org
+port 587
+protocol smtp
+auth on
+user 
+from 
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+passwordeval gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.config/neomutt/msmtp-mail.gpg
+
+
+account 1
+host .ovh
+port 465
+protocol smtp
+auth on
+user 
+from 
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+passwordeval gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.config/neomutt/msmtp-mail.gpg
+
+
+account 2
+host .li
+port 465
+protocol smtp
+auth on
+user .org
+from 
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+passwordeval gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.config/neomutt/msmtp-mail.gpg
+
+
+account 3
+host .li
+port 465
+protocol smtp
+auth on
+user .li
+from 
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+passwordeval gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.config/neomutt/msmtp-mail.gpg
+

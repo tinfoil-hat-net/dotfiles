@@ -12,7 +12,7 @@ source "$HOME/.cargo/env"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="fino-time"
+ZSH_THEME="jonathan"
 
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
@@ -134,7 +134,7 @@ alias joplin="~/.npm-global/bin/joplin"
 alias chrome="chrome --enable-features=WebUIDarkMode --force-dark-mode"
 alias anonradio="torsocks mpv http://anonradio.net:8000/anonradio"
 alias technobase="mpv http://listen.technobase.fm/tunein-mp3"
-alias backup-local="~/git/rsync-time-backup/rsync_tmbackup.sh ~/ root@192.168.178.200:/hdds/BACKUP/mint"
+alias backup-local="~/Software/git/rsync-time-backup/rsync_tmbackup.sh ~/ /media/anon/raid/Backup/mint"
 alias temps="watch -n 2 sensors"
 alias backup-ext="~/Software/git/rsync-time-backup/rsync_tmbackup.sh ~/ anon@goliath:/home/anon/ ~/Software/git/rsync-time-backup/exclude.txt"
 alias cal="ncal -w3C"

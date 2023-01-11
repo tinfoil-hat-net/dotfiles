@@ -1,0 +1,134 @@
+set folder = ~/Mail
+set message_cachedir = ~/.config/neomutt/cache/bodies
+set certificate_file = /etc/ssl/certs/ca-certificates.crt
+set mailcap_path = ~/.config/neomutt/mailcap
+set tmpdir = ~/.config/neomutt/tmp
+
+# Sync Mails
+macro index o "<shell-escape>offlineimap<enter>" "run offlineimap for all accounts"
+
+# basic options
+set wait_key = no
+set mbox_type = Maildir
+set timeout = 3
+set mail_check = 0
+set delete
+set quit
+set thorough_search
+set mail_check_stats
+set reply_with_xorig = yes
+unset confirmappend
+unset move
+unset mark_old
+unset beep_new
+
+# Macros
+macro index o "<shell-escape>offlineimap<enter>" "run offlineimap to sync mail for all accounts"
+
+# compose View Options
+set envelope_from                    # which from?
+set edit_headers                     # show headers when composing
+set fast_reply                       # skip to compose when replying
+set askcc                            # ask for CC:
+set fcc_attach                       # save attachments with the body
+set forward_format = "Fwd: %s"       # format of subject when forwarding
+set forward_decode                   # decode when forwarding
+set attribution = "On %d, %n wrote:" # format of quoting header
+set reply_to                         # reply to Reply to: field
+set reverse_name                     # reply as whomever it was to
+set include                          # include message in replies
+set forward_quote                    # include message in forwards
+set editor = "vim"
+set text_flowed
+set sig_dashes                       # no dashes before sig
+unset mime_forward                   # forward attachments as part of body
+auto_view image/jpeg application/pdf 
+
+# status bar, date format, finding stuff etc.
+set status_chars = " *%A"
+set status_format = "[ Folder: %f ] [%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]%>-%?p?( %p postponed )?"
+set date_format = "%d.%m.%Y %H:%M"
+set index_format = "[%Z] %?X?A&-? %D  %-20.20F  %s"
+set sort = threads
+set sort_aux = last-date-received
+set uncollapse_jump
+set sort_re
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+set send_charset = "utf-8:iso-8859-1:us-ascii"
+set charset = "utf-8"
+
+# when composing emails, use this command to get addresses from
+# the addressbook with khard first, and everything else from mu index
+set query_command="goobook query %s"
+
+
+# Pager View Options
+set pager_index_lines = 10
+set pager_context = 3
+set pager_stop
+set menu_scroll
+set tilde
+unset markers
+
+# set mailcup
+set mailcap_path = ~/.config/neomutt/mailcap
+auto_view text/html
+
+# email headers and attachments
+ignore *
+unignore from: to: cc: bcc: date: subject:
+unhdr_order *
+hdr_order from: to: cc: bcc: date: subject:
+alternative_order text/plain text/enriched text/html
+auto_view text/html
+
+# GPG/PGP 
+set pgp_decrypt_command= yes
+set my_msmtp_pass="gpg2 --quiet --for-your-eyes-only --no-tty --decrypt ~/.config/neomutt/msmtp-mail.gpg"
+set crypt_use_gpgme = yes
+set crypt_autosign = no 
+set crypt_verify_sig = yes
+set crypt_replysign = yes
+set crypt_replyencrypt = yes
+set crypt_replysignencrypted = yes
+
+# sidebar patch config
+set sidebar_visible
+set sidebar_short_path
+set sidebar_folder_indent
+set sidebar_width = 25
+set sidebar_divider_char = ' | '
+set sidebar_indent_string = '  ''
+set sidebar_format = "%B %* [%?N?%N / ?%S]"
+
+# Mailboxes to show in the sidebar.
+mailboxes =****/INBOX =****/Sent =****/Drafts =****/Junk =*****/Trash
+mailboxes =****/INBOX =****/Sent =****/Drafts =****/Spam =****/Trash
+mailboxes =****/INBOX =****/Sent =****/Drafts =****/Junk =*****/Trash
+mailboxes =****/INBOX =****/Sent =****/Drafts =****/Junk =*****/Trash
+mailboxes =****/INBOX =****/Sent =****/Drafts =****/Spam =*****/Trash
+
+# source colors and keybindings
+# keeping those in one place makes it easier for my brain
+source ~/.config/neomutt/colors
+source ~/.config/neomutt/bindings
+
+# And finally the account config for multiple accounts
+#############################################################
+
+# by default, use privat
+set realname = "  "
+set spoolfile = "+****/INBOX"
+source ~/.config/neomutt/accounts/****
+source ~/.config/neomutt/accounts/****
+
+# when changing into other mailboxes, use different adresses etc.
+# folder-hook privat/* source ~/.config/neomutt/accounts/privat
+# folder-hook account/* source ~/.config/neomutt/accounts/account
+folder-hook mail/* source ~/.config/neomutt/accounts/*****
+# folder-hook listsub/* source ~/.config/neomutt/accounts/listsub
+# folder-hook social/* source ~/.config/neomutt/accounts/social
+
+set sendmail="/usr/bin/msmtp"  # Use msmtp rather than sendmail
+
