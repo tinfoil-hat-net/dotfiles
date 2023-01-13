@@ -35,7 +35,6 @@
 *.color7:       #707880
 *.color15:      #c5c8c6
 
-
 ! URxvt Appearance
 
 Rxvt*font:            xft:JetBrainsMono-Regular:size=10
@@ -43,26 +42,9 @@ Rxvt*boldFont:        xft:JetBrainsMono-Regular:bold:size=10
 Rxvt*italicFont:      xft:JetBrainsMono-Regular:italic:autohint=true:size=10
 Rxvt*boldItalicFont:  xft:JetBrainsMono-Regular:bold:italic:autohint=true:size=10
 
-URxvt.keysym.Shift-C-Up:     font-size:increase
-URxvt.keysym.Shift-C-Down:   font-size:decrease
-URxvt.keysym.Shift-C-0:  font-size:reset
-
-! DWM Colours
-dwm.normbordercolor: #eeeeee
-dwm.normbgcolor: #2b2b2b
-dwm.normfgcolor: #ffffff
-dwm.selbordercolor: #595959
-dwm.selbgcolor: #a58804
-dwm.selfgcolor: #ffffff
-
-! Setting transparency and background
-URxvt.depth: 32
-URxvt*background: rgba:0000/0000/0000/cccc
-
-
 URxvt.letterSpace: 0
 URxvt.lineSpace: -2
-URxvt.geometry: 80x26
+URxvt.geometry: 80x25
 URxvt.internalBorder:10
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
@@ -70,7 +52,7 @@ URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.urgentOnBell: false
-! URxvt.depth: 24
+URxvt.depth: 24
 URxvt.iso14755: false
 
 !! Common Keybinds for Navigations
@@ -79,18 +61,21 @@ URxvt.keysym.Shift-Down: command:\033]721;1\007
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
 
-!! Copy Paste & Other Ex
+!! Copy Paste & Other Extensions
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-! Link Handling
-URxvt.url-launcher: /usr/bin/brave-browser
-URxvt.colorUL: #36a832
-URxvt.perl-ext-common: default,matcher,font-size
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/local/bin/xdg-open
 URxvt.matcher.button: 1
 
 ! -- XIDLE -- !
@@ -109,3 +94,4 @@ xlock.username: username:
 xlock.password: password: 
 xlock.font: XFONT
 xlock.planfont: XFONT
+
