@@ -12,8 +12,7 @@ source "$HOME/.cargo/env"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="jonathan"
-
+ZSH_THEME=Chicago95
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
@@ -25,11 +24,9 @@ export LC_ALL="en_US.UTF-8"
 
 
 # Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
+# ZSH_THEME=Chicago95# a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
+ZSH_THEME=Chicago95
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -118,6 +115,8 @@ source $ZSH/oh-my-zsh.sh
 
 # ALIASES
 
+alias ll="ls -lAF"
+alias h="history 25"
 alias office="cd ~ && clear && offlineimap && mu index --maildir ~/Mail"
 alias rss="newsboat"
 alias audio-ext="sysctl hw.snd.default_unit=4"

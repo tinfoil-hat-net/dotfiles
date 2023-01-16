@@ -52,7 +52,7 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "rxvt"
+terminal = "xfce4-terminal"
 editor = os.getenv("vim") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -350,8 +350,8 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ modkey }, "d", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+--     awful.key({ modkey }, "d", function() menubar.show() end,
+--               {description = "show the menubar", group = "launcher"})
 )
 
 clientkeys = gears.table.join(
