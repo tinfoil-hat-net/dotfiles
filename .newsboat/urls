@@ -1,0 +1,111 @@
+"query:Unread Articles:unread = \"yes\""
+
+# Software Releases
+"query:Releases:tags # \"Releases\""
+
+https://github.com/BookStackApp/BookStack/releases.atom "Bookstack" Releases /!
+https://github.com/Chocobozzz/PeerTube/releases.atom "Peertube" Releases /!
+https://github.com/jellyfin/jellyfin/releases.atom "Jellyfin" Releases /!
+https://github.com/PrivateBin/PrivateBin/releases.atom "PrivateBin" Releases /!
+https://my.proxmox.com/index.php/en/announcements/tag/proxmox-ve/rss "Proxmox" Releases /!
+https://github.com/haiwen/seafile/releases.atom "Seafile" Releases /!
+https://git.pleroma.social/pleroma/pleroma/-/releases.atom "Pleroma" Releases /!
+https://grapheneos.org/releases.atom "GrapheneOS" Releases/!
+https://github.com/dgtlmoon/changedetection.io/releases.atom "changedetection.io" Releases /!
+https://github.com/ArchiveBox/ArchiveBox/releases.atom "Archivebox" Releases /!
+https://github.com/nomic-ai/gpt4all/releases.atom "GPT4All" Releases /!
+https://github.com/yt-dlp/yt-dlp/releases.atom "yt-dlp" Releases/!
+https://github.com/root-gg/plik/releases.atom "Plik" Releases /!
+https://github.com/LizardByte/Sunshine/releases.atom "Sunshine" Releases /!
+https://github.com/laurent22/joplin//releases.atom "Joplin" Releases /!
+https://github.com/pystardust/ani-cli/releases.atom "ani-cli" Releases /!
+https://github.com/go-gitea/gitea/releases.atom "Gitea" Releases /!
+https://github.com/blueprint-freespeech/ricochet-refresh/releases.atom "Ricochet refresh" Releases /!
+https://forums.whonix.org/c/news.rss "Whonix" Releases /!
+
+# Blogposts
+"query:Blogs:tags # \"Blogs\""
+
+https://blog.freespeechextremist.com/feed.rss "@P Blog" Blogs /!
+https://sizeof.cat/index.xml "sizeof.cat" Blogs /!
+https://www.qubes-os.org/feed.xml "QubesOS" Blogs /!
+https://blog.linuxmint.com/?feed=rss2 "LinuxMint" Blogs /!
+https://dataswamp.org/~solene/rss.xml "Solene" Blogs /!
+https://vkc.sh/feed/ "Veronica" Blogs /!
+https://zapatopi.net/blog/rss.xml "zapatopi" Blogs /!
+
+## # tinfoil-hat.net
+## "query:tinfoil-hat.net:tags # \"tinfoil-hat.net\""
+## https://search.tinfoil-hat.net/search?q=tinfoil-hat.net&format=rss "tinfoil-hat.net" tinfoil-hat.net /!
+
+# News
+"query:News:tags # \"News\""
+
+https://tarnkappe.info/feed "Tarnkappe.info" News/!
+https://krebsonsecurity.com/feed/ "KrebsonSecurity" News/!
+https://www.kuketz-blog.de/feed/ "kuketz-blog" News/!
+https://www.linuxjournal.com/rss.xml "Linuxjournal" News/!
+https://www.404media.co/rss/ "404Media" News/!
+https://www.bleepingcomputer.com/feed/ "Bleepingcomputer" News/!
+
+# Chans
+"query:Chans:tags # \"Chans\""
+
+https://lainchan.org/%CE%A9/index.rss "Lainchan - "/tech/" Chans /!
+https://lainchan.org/sec/index.rss "Lainchan - /sec/" Chans /!
+
+# Foren
+"query:Foren:tags # \"Foren\""
+
+https://www.linux.org/forums/-/index.rss?order=post_date Foren /!
+https://www.hardwareluxx.de/community/forums/linux-und-andere-freie-betriebssysteme.211/index.rss Foren /!
+
+# Video Releases
+"Video Releases"
+
+https://www.conspiracydocumentaries.com/feed/ "Conspiracy Documentaries"
+
+# Youtube
+"query:Youtube:tags # \"Youtube\""
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmFeOdJI3IXgTBDzqBLD8qg "Moon" Youtube /!
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "Mental Outlaw" Youtube /!
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYlMGSxDy8fCQGXesK64aEg "YouTux Channel" Youtube /!
+
+# Lainchan Webring
+"query:Webring:tags # \"Webring\""
+
+https://getimiskon.xyz/rss.xml "getimiskons space" Webring /!
+https://tinfoil-hat.net/index.xml "tinfoil-hat" Webring /!
+https://jakesthoughts.xyz/rss.xml "Jakes thoughts" Webring /!
+https://dataswamp.org/~lich/rss.xml "lichs website" Webring /!
+https://tohya.net/feed.rss "saturnexplorers" Webring /!
+https://gapandfriends.neocities.org/blog/feed.rss "Gap and friends" Webring /!
+https://321cosmica.neocities.org/en/cosmica-en.xml "Cosmica" Webring /!
+https://nosleepforme.neocities.org/rss.xml "No Sleep" Webring /!
+https://kassy.neocities.org/miscfeed.xml "kassy" Webring /!
+https://cabbagesorter.neocities.org/rss.xml "Cabbage Sorter" Webring /!
+https://confusion.codeberg.page/rss.xml "Confusions Blog" Webring /!
+https://kirillov.neocities.org/feed.xml "Kirillov" Webring /!
+https://orizuru.neocities.org/atom.xml "orizuru" Webring /!
+https://grafo.zone/index.xml "Grafo Zone" Webring /!
+https://foreverliketh.is/blog/index.xml "foreverliketh.is" Webring /!
+https://www.cozynet.org/feed/feed.xml "CozyNet" Webring /!
+https://andrei.xyz/index.xml "andrei.xyz" Webring /!
+https://0x19.org/posts/feed.php "0x19.org" Webring /!
+https://jahanrashidi.com/rss "Jahans site" Webring /!
+https://blog.shr4pnel.com/rss.xml "shrapnelnet" Webring /!
+https://risingthumb.xyz/Writing/Blog/index.rss "Rising Thumb" Webring /!
+https://lainnet.superglobalmegacorp.com/rss.xml "LainNet" Webring /!
+https://www.idelides.xyz/rss "Idelides" Webring /!
+https://vendell.online/blog/feed.xml "Vendell" Webring /!
+https://torpus.info/index.xml "torpus" Webring /!
+https://gau7ilu.xyz/atom.xml "gau7ilu.xyz" Webring /!
+https://blogelogeluren.netlify.app/rss.xml "turpelurpeluren" Webring /!
+https://sor.neocities.org/rss.xml "Sorzitos Layer" Webring /!
+https://ful4n.bearblog.dev/feed "ful4n" Webring /!
+https://world-playground-deceit.net/global.xml "World Playground Deceit" Webring /!
+https://miredo.neocities.org/atom.xml "miredo" Webring /!
+https://chknz.org/feed.xml "chknz" Webring /!
+https://midnightmountain.xyz/index.xml "midnight mountain" Webring /!
+https://cult.ist/rss.xml "Cult.ist" Webring /!

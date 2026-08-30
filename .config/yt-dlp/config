@@ -1,0 +1,6 @@
+--output "%(upload_date)s - %(title)s.%(ext)s"
+--download-archive archive.txt
+--embed-metadata
+--embed-thumbnail
+--embed-subs
+--all-subs

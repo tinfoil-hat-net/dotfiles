@@ -1,0 +1,57 @@
+# GENERAL
+# ---
+connected_message_on_startup = "yes"
+mouse_support = "no"
+mouse_list_scroll_whole_page = "yes"
+message_delay_time = "1"
+playlist_shorten_total_times = "yes"
+search_engine_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+locked_screen_width_part = "50"
+ask_for_locked_screen_width_part = "yes"
+external_editor = "vim"
+playlist_disable_highlight_delay = "0"
+playlist_display_mode = "columns"
+playlist_show_remaining_time = "yes"
+cyclic_scrolling = "yes"
+header_text_scrolling = "yes"
+jump_to_now_playing_song_at_start = "yes"
+lines_scrolled = "2"
+system_encoding = "utf-8"
+regular_expressions = "extended"
+incremental_seeking = "yes"
+seek_time = "1"
+display_bitrate = "yes"
+ignore_leading_the = "yes"
+empty_tag_marker = ""
+
+## Browser / Display ##
+browser_display_mode = "columns"
+autocenter_mode = "yes"
+follow_now_playing_lyrics = "yes"
+song_columns_list_format = "(10)[blue]{l} (30)[green]{a} (30)[magenta]{b} (50)[yellow]{t}"
+colors_enabled = "yes"
+main_window_color = "white"
+header_window_color = "cyan"
+volume_color = "red"
+progressbar_color = "cyan"
+statusbar_color = "white"
+active_window_border = "blue"
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "yes"
+
+## Header / Song formats ##
+alternative_header_first_line_format = "$0$aqqu$/a {$7%a - $9}{$5%t$9}|{$8%f$9} $0$atqq$/a$9"
+alternative_header_second_line_format = "{{$6%b$9}{ [$6%y$9]}}|{%D}"
+song_list_format = "{$3%n  $9}{$7%a - $9}{$5%t$9}|{$8%f$9}$R{$6  %b$9}{$3  %l$9}"
+user_interface = "alternative"
+default_place_to_search_in = "database"
+
+## Now playing / Status ##
+now_playing_prefix = "> "
+song_status_format = " $2%a $4$3 $8%t $4$3 $5%b "
+centered_cursor = "yes"
+
+## Progress bar ##
+progressbar_look = "▪▪▪"
