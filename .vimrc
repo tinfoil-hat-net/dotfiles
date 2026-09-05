@@ -1,10 +1,14 @@
 syntax on
 colorscheme lunaperche
 
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+" Highlight cursor line underneath the cursor vertically.
+set cursorcolumn
+
 set nocompatible
 set number
-set cursorline
-set tabstop=2
+set tabstop=4
 set ignorecase
 set hlsearch
 set completeopt+=menuone
@@ -87,7 +91,6 @@ call feedkeys("\<C-P>", 'n')
 end
 endfun
 
-
 "statusline without statusline plugin"
 let g:currentmode={
 \ 'n'  : 'Normal ',
@@ -132,5 +135,3 @@ exe 'hi! user1 ctermbg=1 ctermfg=0'
 endif
 return ''
 endfunction
-
-

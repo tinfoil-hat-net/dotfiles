@@ -41,6 +41,7 @@ alias vanilla "sudo tomb open ~/Videos/vanilla.tomb -k ~/Dokumente/tomb.key"
 alias webserver "python3 -m http.server 8001"
 alias check-port "nc -zv"
 alias screenfetch "cat ~/Dokumente/anonatreality.txt"
+alias neofetch "fastfetch -c neofetch"
 # ==================== ALIASES ==================== #
 
 # ==================== EXPORTS ==================== #

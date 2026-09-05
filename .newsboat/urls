@@ -34,19 +34,19 @@ https://dataswamp.org/~solene/rss.xml "Solene" Blogs /!
 https://vkc.sh/feed/ "Veronica" Blogs /!
 https://zapatopi.net/blog/rss.xml "zapatopi" Blogs /!
 
-## # tinfoil-hat.net
-## "query:tinfoil-hat.net:tags # \"tinfoil-hat.net\""
-## https://search.tinfoil-hat.net/search?q=tinfoil-hat.net&format=rss "tinfoil-hat.net" tinfoil-hat.net /!
+# ## # tinfoil-hat.net
+# "query:tinfoil-hat.net:tags # \"tinfoil-hat.net\""
+# https://search.tinfoil-hat.net/search?q=tinfoil-hat.net&format=rss "tinfoil-hat.net" tinfoil-hat.net /!
 
 # News
 "query:News:tags # \"News\""
 
-https://tarnkappe.info/feed "Tarnkappe.info" News/!
-https://krebsonsecurity.com/feed/ "KrebsonSecurity" News/!
-https://www.kuketz-blog.de/feed/ "kuketz-blog" News/!
-https://www.linuxjournal.com/rss.xml "Linuxjournal" News/!
-https://www.404media.co/rss/ "404Media" News/!
-https://www.bleepingcomputer.com/feed/ "Bleepingcomputer" News/!
+https://tarnkappe.info/feed "Tarnkappe.info" News /!
+https://krebsonsecurity.com/feed/ "KrebsonSecurity" News /!
+https://www.kuketz-blog.de/feed/ "kuketz-blog" News /!
+https://www.linuxjournal.com/rss.xml "Linuxjournal" News /!
+https://www.404media.co/rss/ "404Media" News /!
+https://www.bleepingcomputer.com/feed/ "Bleepingcomputer" News /!
 
 # Chans
 "query:Chans:tags # \"Chans\""
